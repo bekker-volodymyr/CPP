@@ -3,9 +3,7 @@
 
 using namespace std;
 
-enum PlayerStatus {
-    Online, Offline, Unknown
-};
+
 
 int main() {
     SetConsoleOutputCP(1251); // встановлення кодування виводу консолі
@@ -89,7 +87,13 @@ int main() {
         default: cout << "Невідомий день";
     }
 
+
+
     // Switch with enum
+    enum PlayerStatus {
+        Online, Offline, Unknown
+    };
+
     PlayerStatus status = Online;
     switch (status) {
     case Online: cout << "Гравець в мережі" << endl;
