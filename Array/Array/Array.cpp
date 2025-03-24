@@ -1,5 +1,7 @@
 #include <iostream>
 #include <Windows.h>
+#include <cstdlib> // rand(), srand()
+#include <ctime>   // time()
 
 using namespace std;
 
@@ -52,4 +54,26 @@ int main()
         sum += nums[i];
     }
     cout << endl;
+
+    // Генерація випадкового числа
+    // Використовується для задання "seed" (початкового числа) генератору rand(). 
+    // Без цього rand() завжди повертатиме однакову послідовність чисел при кожному запуску програми.
+    srand(time(nullptr));
+
+    // rand генерує випадкове число типу int в діапазоні від 0 до RAND_MAX
+    // RAND_MAX — це константа, зазвичай 32767 (але може бути іншою залежно від реалізації компілятора).
+    int r = rand();
+
+    cout << r << endl;
+
+    // Генерація випадкового числа в діапазоні
+    srand(time(nullptr));
+
+    int r = rand() % 100; // Випадкове число від 0 до 99;
+
+    int r2 = rand() % 100 + 1; // Випадкове число від 1 до 100;
+
+    int min = 10;
+    int max = 200;
+    int r3 = rand() % (max - min + 1) + min; // Випадкове число від min до max
 }
