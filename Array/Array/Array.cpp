@@ -95,18 +95,21 @@ int main()
     cout << matrix[2][3] << endl;
 
     // Перебор двовимірного масиву
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 4; j++) {
+    for (int i = 0; i < 3; i++) 
+    {
+        for (int j = 0; j < 4; j++) 
+        {
             cout << matrix[i][j] << " ";
         }
         cout << endl;
     }
 
     // Ініціалізація циклом
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 4; j++) {
+    for (int i = 0; i < 3; i++) 
+    {
+        for (int j = 0; j < 4; j++) 
+        {
             matrix[i][j] = rand() % 10;
         }
-        cout << endl;
     }
 }
