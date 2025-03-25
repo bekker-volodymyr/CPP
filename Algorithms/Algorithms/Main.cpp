@@ -174,7 +174,7 @@ int main() {
 		int mid = left + (right - left) / 2;
 
 		if (searchArr[mid] == value) {
-			index = mid; // Елемент знайдено, повертаємо індекс
+			index = mid; // Елемент знайдено, зберігаємо індекс
 			break;
 		}
 		else if (searchArr[mid] < value) {
