@@ -3,6 +3,11 @@
 
 using namespace std;
 
+template<typename T1, typename T2>
+auto add(T1 a, T2 b) -> decltype(a + b) {
+    return a + b;
+}
+
 void Foo() {
     // Якась функція
 }
@@ -55,9 +60,17 @@ int main()
     // auto та decltype
     auto a1 = 0; //int
     decltype (a1) a2 = a1; // те саме, що й auto a2=a1;
-    typedef decltype (a1) АTYPE; //АTYPE є синонімом int
-    ATYPE а3 = 5;
 
+    auto x = 5;       // int
+    auto y = 3.14;    // double
+    auto z = x + y;   // double (int + double = double)
+
+    int a = 10;
+    decltype(a) b; // b має тип int
+    
+    // тип w = double, 
+    // але без ініціалізації
+    decltype(x + y) w;
 }
 
 int sum(int a, int b) {
