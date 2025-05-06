@@ -1,0 +1,3 @@
+some text that will be written to the file
+another line of text
+and another one line for writing into file
