@@ -9,5 +9,5 @@
 </p>
 
 <p>
-  За <a href="https://drive.google.com/drive/folders/1BtMh5VwjE0N6-yLrvimsqjiCpj5X-e3P?usp=drive_link" target="_blank">цим посиланням</a> ти знайдеш презентації з теорією, практичні приклади та домашні завдання.
+  За <a href="https://drive.google.com/drive/folders/1BtMh5VwjE0N6-yLrvimsqjiCpj5X-e3P?usp=drive_link" target="_blank">цим посиланням</a> ти знайдеш презентації з теорією, практичні та домашні завдання.
 </p>
