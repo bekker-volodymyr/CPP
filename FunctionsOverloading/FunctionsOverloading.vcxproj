@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e0e4ee67-d504-454d-af7e-d98d77335f05}</ProjectGuid>
-    <RootNamespace>Functions2</RootNamespace>
+    <ProjectGuid>{13541040-d9ca-48fd-b853-47817f18e92a}</ProjectGuid>
+    <RootNamespace>FunctionsOverloading</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Functions2.cpp" />
+    <ClCompile Include="FunctionsOverloading.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
