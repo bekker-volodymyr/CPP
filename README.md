@@ -18,7 +18,7 @@
 <section>
   <h2>П42</h2>
 
-  <h1> Кохан Олексій - <a href="https://github.com/8KOHAN">Мій GitHub</a> </h1>
+  <h2> Кохан Олексій - <a href="https://github.com/8KOHAN">Мій GitHub</a> </h2>
 
 </section>
 
