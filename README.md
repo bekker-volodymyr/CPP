@@ -18,6 +18,8 @@
 <section>
   <h2>П42</h2>
 
+  <h3> Кохан Олексій - <a href="https://github.com/8KOHAN">Мій репозиторій на GitHub</a> </h3>
+
 </section>
 
 <section>
