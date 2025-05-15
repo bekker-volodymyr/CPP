@@ -18,8 +18,7 @@
 <section>
   <h2>П42</h2>
   <div>
-      <p>D u b r o v i n</p>
-      <p>D a n i i l</p>
+    <p>𝖑𝖊𝖘4𝖑𝖊</p>
   </div>
 </section>
 
