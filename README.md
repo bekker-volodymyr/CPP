@@ -18,12 +18,15 @@
 <section>
   <h2>П42</h2>
 
+  <p>kiossadost: Життя – це смертельна хвороба яка передається статевим шляхом.</p>
+  
   <h2> Кохан Олексій - <a href="https://github.com/8KOHAN">Мій GitHub</a> </h2>
 
   <div>
       <p>D u b r o v i n</p>
       <p>D a n i i l</p>
   </div>
+  
 </section>
 
 <section>
