@@ -25,6 +25,7 @@
   <div>
       <p>D u b r o v i n</p>
       <p>D a n i i l</p>
+      <p>Maria Kulibaba</p>
   </div>
   
 </section>
