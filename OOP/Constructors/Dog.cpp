@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 
 using namespace std;
 
@@ -16,18 +16,18 @@ public:
 		SetAge(a);
 	}
 
-	// Модифікатори
+	// РњРѕРґРёС„С–РєР°С‚РѕСЂРё
 	void SetName(char* value) {
 		if (value != nullptr)
 			strcpy_s(name, 50, value);
 		else
-			strcpy_s(name, 50, "Пес Патрон");
+			strcpy_s(name, 50, "РџРµСЃ РџР°С‚СЂРѕРЅ");
 	}
 	void SetBreed(char* value) {
 		if (value != nullptr)
 			strcpy_s(breed, 50, value);
 		else
-			strcpy_s(breed, 50, "Джек-Рассел-Тер'єр");
+			strcpy_s(breed, 50, "Р”Р¶РµРє-Р Р°СЃСЃРµР»-РўРµСЂ'С”СЂ");
 	}
 	void SetAge(int value) {
 		if (value >= 0)
@@ -36,7 +36,7 @@ public:
 			age = 6;
 	}
 
-	//Інспектори
+	//Р†РЅСЃРїРµРєС‚РѕСЂРё
 	const char* GetName() {
 		return name;
 	}

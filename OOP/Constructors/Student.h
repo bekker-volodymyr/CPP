@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <iostream>
 using namespace std;
@@ -15,11 +15,11 @@ public:
 
 	int avgGrade();
 
-	// Модифікатори
+	// РњРѕРґРёС„С–РєР°С‚РѕСЂРё
 	void SetName(const char* value);
 	void SetGrades(int* g, int gc);
 
-	//Інспектори
+	//Р†РЅСЃРїРµРєС‚РѕСЂРё
 	char* GetName() {
 		return _name;
 	}

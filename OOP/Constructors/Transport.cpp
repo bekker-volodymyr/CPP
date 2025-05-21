@@ -1,14 +1,14 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 class Transport {
 public:
 	Transport()
 	{
-		cout << "Êîíñòðóêòîð êëàñó Transport\n";
+		cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ»Ð°ÑÑƒ Transport\n";
 	}
 	~Transport() {
-		cout << "Äåñòðóêòîð êëàñó Transport\n";
+		cout << "Ð”ÐµÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ»Ð°ÑÑƒ Transport\n";
 	}
 };
 
@@ -16,10 +16,10 @@ class Car : public Transport {
 public:
 	Car()
 	{
-		cout << "Êîíñòðóêòîð êëàñó Car\n";
+		cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ»Ð°ÑÑƒ Car\n";
 	}
 	~Car() {
-		cout << "Äåñòðóêòîð êëàñó Car\n";
+		cout << "Ð”ÐµÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ»Ð°ÑÑƒ Car\n";
 	}
 };
 
@@ -27,9 +27,9 @@ class Truck : public Car {
 public:
 	Truck()
 	{
-		cout << "Êîíñòðóêòîð êëàñó Truck\n";
+		cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ»Ð°ÑÑƒ Truck\n";
 	}
 	~Truck() {
-		cout << "Äåñòðóêòîð êëàñó Truck\n";
+		cout << "Ð”ÐµÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ»Ð°ÑÑƒ Truck\n";
 	}
 };
