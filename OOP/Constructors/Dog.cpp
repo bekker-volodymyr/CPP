@@ -10,10 +10,9 @@ private:
 public:
 	Dog() = default;
 
-	Dog(char* n, char* b, int a) {
+	Dog(char* n, char* b, int a): age(a) {
 		SetName(n);
 		SetBreed(b);
-		SetAge(a);
 	}
 
 	// Модифікатори
