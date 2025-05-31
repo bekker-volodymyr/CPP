@@ -34,6 +34,8 @@
   
   <p>Maria Kulibaba</p>
   
+  <p>Kostya</p>
+  
 </section>
 
 <section>
@@ -42,6 +44,3 @@
 </section>
 
 </section>
-
-<h1>P42</h1>
-<p>Kostya</p>
