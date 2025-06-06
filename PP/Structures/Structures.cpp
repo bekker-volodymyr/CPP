@@ -1,5 +1,5 @@
 #include <iostream>
-#include <windows.h>
+// #include <windows.h> тільки на Windows
 
 using namespace std;
 
@@ -33,8 +33,9 @@ struct point {
 
 int main()
 {
-    SetConsoleOutputCP(1251);
-    SetConsoleCP(1251);
+    // Тільки на Windows
+    // SetConsoleOutputCP(1251);
+    // SetConsoleCP(1251);
 
     struct Test { // 8 байт - вирівнювання
         char c; // 1 байт
