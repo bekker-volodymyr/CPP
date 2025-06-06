@@ -40,6 +40,16 @@ void PrintDate(const date& d)
          << " " << d.weekday << ", " << d.mon_name << '\n';
 }
 
+struct fieldbyte {
+    unsigned char b1 : 1; // 1 біт
+    unsigned char b2 : 1; // 1 біт
+    unsigned char b3 : 1; // 1 біт
+    unsigned char b4 : 1; // 1 біт
+    unsigned char b5 : 1; // 1 біт
+    unsigned char b6 : 1; // 1 біт
+    unsigned char b7 : 1; // 1 біт
+    unsigned char b8 : 1; // 1 біт
+}; // Розмір структури: 1 байт (8 біт)
 
 int main()
 {
@@ -59,6 +69,15 @@ int main()
         data.i = 123; // Присвоєння значення типу int, char перезаписується
         cout << "Значення int: " << data.i << '\n';  // Виводиться 123
         cout << "Значення char: " << data.c << '\n'; // Виводиться '}' (символ, що відповідає 123 в ASCII)
+    }
+
+
+    // Розмір структури з бітовими полями
+    {
+        cout << "Розмір структури з бітовими полями: " << sizeof(fieldbyte) << '\n';
+        fieldbyte fb = { 1, 0, 1, 0, 1, 0, 1, 0 };
+        cout << "Значення бітових полів: "
+             << (int)fb.b1 << ' ' << (int)fb.b2 << '\n';
     }
 
     struct Test { // 8 байт - вирівнювання
