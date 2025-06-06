@@ -29,7 +29,11 @@ struct point {
     int y;
 };
 
-
+void PrintDate(const date& d)
+{
+    cout << d.day << "." << d.month << "." << d.year
+         << ", " << d.weekday << ", " << d.mon_name << '\n';
+}
 
 int main()
 {
@@ -82,4 +86,6 @@ int main()
     cout << "Я народився " << myBirthday.day << " " << myBirthday.mon_name << " " << myBirthday.year << ".\n";
 
     cout << sizeof(myBirthday) << endl;
+
+    PrintDate(myBirthday);
 }

@@ -29,11 +29,16 @@ struct point {
     int y;
 } p1, p2, p3;
 
-
 union Data {  // 4 байт - все розміщується в одному блоці пам'яті
     char c;  // 1 байт
     int i;   // 4 байти
 };
+
+void PrintDate(const date& d)
+{
+    cout << d.day << "." << d.month << "." << d.year
+         << " " << d.weekday << ", " << d.mon_name << '\n';
+}
 
 
 int main()
@@ -102,5 +107,5 @@ int main()
 
     cout << sizeof(myBirthday) << endl;
 
-
+    PrintDate(myBirthday);
 }
