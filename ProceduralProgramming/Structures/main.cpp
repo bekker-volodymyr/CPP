@@ -47,13 +47,13 @@ int main()
         cout << "Розмір об'єднання Union: " << sizeof(Data) << '\n';
         Data data;
 
-        data.c = 'h'; // Присвоєння значення типу float
-        cout << "Значення char: " << data.c << '\n';
-        cout << "Значення int: " << data.i << '\n';
+        data.c = 'h'; // Присвоєння значення типу char
+        cout << "Значення char: " << data.c << '\n'; // Виводиться 'h'
+        cout << "Значення int: " << data.i << '\n';  // Виводиться 104 (ASCII код 'h')
 
-        data.i = 123;
-        cout << "Значення int: " << data.i << '\n';
-        cout << "Значення char: " << data.c << '\n';
+        data.i = 123; // Присвоєння значення типу int, char перезаписується
+        cout << "Значення int: " << data.i << '\n';  // Виводиться 123
+        cout << "Значення char: " << data.c << '\n'; // Виводиться '}' (символ, що відповідає 123 в ASCII)
     }
 
     struct Test { // 8 байт - вирівнювання
