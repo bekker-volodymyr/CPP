@@ -7,7 +7,7 @@
 За [цим посиланням](https://drive.google.com/drive/folders/1BtMh5VwjE0N6-yLrvimsqjiCpj5X-e3P?usp=drive_link) ти знайдеш презентації з теорією, практичні та домашні завдання.
 
 ## Вміст
-1. [Procedural Programming]() - цей каталог містить приклади з основ процедурного програмування.
+1. [Procedural Programming](https://github.com/bekker-volodymyr/CPP/tree/master/ProceduralProgramming) - цей каталог містить приклади з основ процедурного програмування.
 2. [Object-Oriented Programming]() - цей каталог містить приклади з ООП.
 
 ## Підписи студентів
