@@ -3,6 +3,7 @@
 #include "LinkedList.h"
 #include "Stack.h"
 #include "Queue.h"
+#include "Tree.h"
 
 using namespace std;
 
@@ -73,16 +74,16 @@ int main()
 
         cout << "Linked List Elements: ";
         list.forEach(printNode<int>); // Виклик функції для кожного елементу списку
-        cout<<'\n';
+        cout << '\n';
     }
 
     {
         // Приклад використання стеку
-        Stack<int> stack; // Створення стеку
-        stack.push(1);    // Додавання елементу до стеку
-        stack.push(2);    // Додавання ще одного елементу
-        stack.push(3);    // Додавання третього елементу
-        cout << "Stack Size: " << stack.size() << '\n'; // Виведення розміру стеку
+        Stack<int> stack;                                // Створення стеку
+        stack.push(1);                                   // Додавання елементу до стеку
+        stack.push(2);                                   // Додавання ще одного елементу
+        stack.push(3);                                   // Додавання третього елементу
+        cout << "Stack Size: " << stack.size() << '\n';  // Виведення розміру стеку
         cout << "Top Element: " << stack.peek() << '\n'; // Виведення верхнього елементу стеку
         cout << "Popping elements from stack: ";
         while (!stack.isEmpty())
@@ -94,10 +95,10 @@ int main()
 
     {
         // Приклад використання черги
-        Queue<int> queue; // Створення черги
-        queue.enqueue(1); // Додавання елементу до черги
-        queue.enqueue(2); // Додавання ще одного елементу
-        queue.enqueue(3); // Додавання третього елементу
+        Queue<int> queue;                                  // Створення черги
+        queue.enqueue(1);                                  // Додавання елементу до черги
+        queue.enqueue(2);                                  // Додавання ще одного елементу
+        queue.enqueue(3);                                  // Додавання третього елементу
         cout << "Queue Size: " << queue.getSize() << '\n'; // Виведення розміру черги
         cout << "Front Element: " << queue.peek() << '\n'; // Виведення переднього елементу черги
         cout << "Dequeuing elements from queue: ";
@@ -108,5 +109,22 @@ int main()
         cout << '\n';
     }
 
+    {
+        // Використання бінарного дерева
+        Tree<int> t;
+
+        t.insert(10);
+        t.insert(5);
+        t.insert(13);
+        t.insert(6);
+        t.insert(25);
+        t.insert(65);
+        t.insert(100);
+        t.insert(70);
+
+        auto node = t.find(5);
+        cout << node << '\n';
+        t.print();
+    }
     return 0;
 }
