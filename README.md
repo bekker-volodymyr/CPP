@@ -10,6 +10,8 @@
 1. [Procedural Programming](https://github.com/bekker-volodymyr/CPP/tree/master/ProceduralProgramming) - цей каталог містить приклади з основ процедурного програмування.
 2. [Object-Oriented Programming](https://github.com/bekker-volodymyr/CPP/tree/master/OOP) - цей каталог містить приклади з ООП.
 
+# ТЕКСТ З ФОРКУ
+
 ## Підписи студентів
 
 ### П410
