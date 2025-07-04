@@ -10,7 +10,7 @@
 1. [Procedural Programming](https://github.com/bekker-volodymyr/CPP/tree/master/ProceduralProgramming) - цей каталог містить приклади з основ процедурного програмування.
 2. [Object-Oriented Programming](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming) - цей каталог містить приклади з ООП.
     1. [This Pointer](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/ThisPointer) - приклад використання покажчика this.
-    2. [Static Memebers](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/StaticMembers) - проєкт з використанням статичних членів класу (полів та методів)
+    2. [Static Memebers](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/StaticMembers) - проєкт з використанням статичних членів класу (полів та методів).
     3. [Copy Constructor](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/CopyConstructor) - каталог, що містить приклад реалізації глибокого копіювання за допомогою конструктора копіювання.
 
 ## Підписи студентів
