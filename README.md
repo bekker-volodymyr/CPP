@@ -23,8 +23,8 @@
 
 ## 📂 Структура репозиторію
 
-### 2. [Procedural Programming](https://github.com/bekker-volodymyr/CPP/tree/master/PP)
-### 1. [Procedural Programming](https://github.com/bekker-volodymyr/CPP/tree/master/ProceduralProgramming)
+### 1. [Procedural Programming](https://github.com/bekker-volodymyr/CPP/tree/master/PP)
+### 2. [Procedural Programming](https://github.com/bekker-volodymyr/CPP/tree/master/ProceduralProgramming)
 Каталоги із прикладами **процедурного програмування** на базовому рівні.
 
 ### 3. [Object-Oriented Programming](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming)
