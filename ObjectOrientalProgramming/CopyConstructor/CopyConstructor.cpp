@@ -1,90 +1,98 @@
-/* Конструктор копіювання (Copy Constructor) */
-
-// Конструктор копіювання - це спеціальний конструктор, який створює новий об'єкт як копію існуючого об'єкта.
-// Він викликається, коли об'єкт передається за значенням або ініціалізується іншим об'єктом того ж типу.
-// Компілятор автоматично створює конструктор копіювання, якщо ви не визначаєте його самостійно.
-// Автоматичний конструктор копіювання виконує "поверхневе" копіювання, що може призвести до проблем з динамічно виділеною пам'яттю.
-
 #include <iostream>
 #include <Windows.h>
+#include <cstring> // РґР»СЏ strlen Рё strcpy_s
 
+// РљР»Р°СЃСЃ "Point" вЂ” РѕРїРёСЃСѓС” С‚РѕС‡РєСѓ РЅР° РїР»РѕС‰РёРЅС–
 class Point {
 private:
-	double x, y;
+    double x, y;
+
 public:
-	Point(double x = 0, double y =0) : x(x), y(y) {
-		std::cout << "Виклик конструктора: (" << x << ", " << y << ")\n";
-	}
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё (Р°Р±Рѕ Р·Р° Р·Р°РјРѕРІС‡СѓРІР°РЅРЅСЏРј)
+    Point(double x = 0, double y = 0) : x(x), y(y) {
+        std::cout << "Р’РёРєР»РёРєР°РЅРѕ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Point: (" << x << ", " << y << ")\n";
+    }
 
-	Point(const Point& other) {
-		this->x = other.x;
-		this->y = other.y;
-	}
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
+    Point(const Point& other) : x(other.x), y(other.y) {
+        std::cout << "РљРѕРїС–СЋРІР°РЅРЅСЏ Point: (" << x << ", " << y << ")\n";
+    }
 
-	void Print() const {
-		std::cout << "Point(" << x << ", " << y << ")\n";
-	}
+    // РњРµС‚РѕРґ РІРёРІРѕРґСѓ РєРѕРѕСЂРґРёРЅР°С‚
+    void Print() const {
+        std::cout << "Point(" << x << ", " << y << ")\n";
+    }
 };
 
+// РљР»Р°СЃ "Person" вЂ” РѕРїРёСЃСѓС” Р»СЋРґРёРЅСѓ Р· С–РјвЂ™СЏРј С‚Р° РІС–РєРѕРј
 class Person {
 private:
-	char* name;
-	int age;
-public:
-	Person() : name(nullptr), age(0) {
-		std::cout << "Виклик конструктора за замовчуванням\n";
-	}
-	Person(const char* name, int age) : age(age) {
-		std::cout << "Виклик конструктора з параметрами: " << name << ", " << age << "\n";
-		this->name = new char[strlen(name) + 1];
-		strcpy_s(this->name, strlen(name) + 1, name);
-	}
-	Person(const Person& other) : age(other.age) {
-		std::cout << "Виклик конструктора копіювання для: " << other.name << "\n";
-		if (other.name) {
-			name = new char[strlen(other.name) + 1];
-			strcpy_s(name, strlen(other.name) + 1, other.name);
-		} else {
-			name = nullptr;
-		}
-	}
-	~Person() {
-		if (name) {
-			delete[] name;
-			std::cout << "Деструктор викликано для: " << name << "\n";
-		}
-	}
+    char* name;
+    int age;
 
-	void Print() const {
-		if (name) {
-			std::cout << "Person: " << name << ", Age: " << age << "\n";
-		} else {
-			std::cout << "Person: Unknown, Age: " << age << "\n";
-		}
-	}
+public:
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р·Р° Р·Р°РјРѕРІС‡СѓРІР°РЅРЅСЏРј
+    Person() : name(nullptr), age(0) {
+        std::cout << "Р’РёРєР»РёРєР°РЅРѕ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Person Р·Р° Р·Р°РјРѕРІС‡СѓРІР°РЅРЅСЏРј\n";
+    }
+
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
+    Person(const char* name, int age) : age(age) {
+        std::cout << "Р’РёРєР»РёРєР°РЅРѕ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Person Р· РїР°СЂР°РјРµС‚СЂР°РјРё: " << name << ", " << age << "\n";
+        this->name = new char[strlen(name) + 1];
+        strcpy_s(this->name, strlen(name) + 1, name);
+    }
+
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
+    Person(const Person& other) : age(other.age) {
+        std::cout << "РљРѕРїС–СЋРІР°РЅРЅСЏ Person РґР»СЏ: " << other.name << "\n";
+        if (other.name) {
+            name = new char[strlen(other.name) + 1];
+            strcpy_s(name, strlen(other.name) + 1, other.name);
+        } else {
+            name = nullptr;
+        }
+    }
+
+    // Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
+    ~Person() {
+        if (name) {
+            std::cout << "Р—РІС–Р»СЊРЅРµРЅРѕ РїР°РјвЂ™СЏС‚СЊ РґР»СЏ: " << name << "\n";
+            delete[] name;
+        }
+    }
+
+    // РњРµС‚РѕРґ РІРёРІРѕРґСѓ С–РЅС„РѕСЂРјР°С†С–С—
+    void Print() const {
+        if (name) {
+            std::cout << "Person: " << name << ", Age: " << age << "\n";
+        } else {
+            std::cout << "Person: [РЅРµРІС–РґРѕРјРµ С–РјвЂ™СЏ], Age: " << age << "\n";
+        }
+    }
 };
 
-int main()
-{
-	SetConsoleOutputCP(1251);
+int main() {
+    SetConsoleOutputCP(1251); // Р”Р»СЏ РїС–РґС‚СЂРёРјРєРё РєРёСЂРёР»РёС†С– РІ РєРѕРЅСЃРѕР»С– Windows
 
-	{
-		Point p1(3.0, 4.0); // Виклик конструктора
-		
-		Point p2(p1); // Виклик конструктора копіювання
-		Point p3 = p1; // Також викликає конструктор копіювання
+    std::cout << "=== РўРµСЃС‚ РєР»Р°СЃСѓ Point ===\n";
+    {
+        Point p1(3.0, 4.0);   // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
+        Point p2(p1);         // РљРѕРїС–СЋРІР°РЅРЅСЏ
+        Point p3 = p1;        // Р©Рµ РѕРґРЅРµ РєРѕРїС–СЋРІР°РЅРЅСЏ
 
-		std::cout << "p1: ";
-		p1.Print();
-		std::cout << "p2: ";
-		p2.Print();
-	}
+        std::cout << "p1: "; p1.Print();
+        std::cout << "p2: "; p2.Print();
+    }
 
-	{
-		Person person1("Alice", 30); // Виклик конструктора з параметрами
-		Person person2 = person1; // Виклик конструктора копіювання - поверхне копіювання
+    std::cout << "\n=== РўРµСЃС‚ РєР»Р°СЃСѓ Person ===\n";
+    {
+        Person person1("РђР»С–СЃР°", 30);
+        Person person2 = person1;
 
-		person1.Print();
-		person2.Print();
-	}
+        person1.Print();
+        person2.Print();
+    }
+
+    return 0;
 }
