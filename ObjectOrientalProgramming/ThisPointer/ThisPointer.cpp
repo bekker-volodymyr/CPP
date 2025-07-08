@@ -1,65 +1,58 @@
-/* Покажчик this */
-
 #include <iostream>
+#include <cstring>
 
 class Student {
 private:
     char* name;
     char* groupName;
     int age;
-public:
-	Student() : name(nullptr), groupName(nullptr), age(0) {}
 
-    Student(const char* name, const char* groupName, int age)
-    {
-		// Використання 'this' для доступу до членів класу
-		this->name = new char[strlen(name) + 1];
-        strcpy_s(this->name, strlen(name) + 1, name);
-        this->groupName = new char[strlen(groupName) + 1];
-        strcpy_s(this->groupName, strlen(groupName) + 1, groupName);
-		this->age = age;
+public:
+    Student() : name(nullptr), groupName(nullptr), age(0) {}
+
+    ~Student() {
+        delete[] name;
+        delete[] groupName;
     }
 
-    //void setThis(Student student) {
-		//this = &student; // Це не коректно, 'this' не може бути змінено
-    //}
-
-    Student& SetAge(int age) {
-		// Використання 'this' для доступу до членів класу - вирішення конфлікту імен
-        this->age = age;
-		return *this; // Повертаємо посилання на поточний об'єкт
-	}
+    // РњРµС‚РѕРґ РІСЃС‚Р°РЅРѕРІР»РµРЅРЅСЏ С–РјРµРЅС–
     Student& SetName(const char* name) {
-        // Використання 'this' для доступу до членів класу
-        if (this->name) {
-            delete[] this->name;
-        }
+        if (this->name) delete[] this->name;
         this->name = new char[strlen(name) + 1];
         strcpy_s(this->name, strlen(name) + 1, name);
-		return *this; // Повертаємо посилання на поточний об'єкт
-	}
+        return *this; // РџРѕРІРµСЂС‚Р°С” РїРѕСЃРёР»Р°РЅРЅСЏ РЅР° РїРѕС‚РѕС‡РЅРёР№ РѕР±'С”РєС‚
+    }
+
+    // РњРµС‚РѕРґ РІСЃС‚Р°РЅРѕРІР»РµРЅРЅСЏ РЅР°Р·РІРё РіСЂСѓРїРё
     Student& SetGroupName(const char* groupName) {
-        // Використання 'this' для доступу до членів класу
-        if (this->groupName) {
-            delete[] this->groupName;
-        }
+        if (this->groupName) delete[] this->groupName;
         this->groupName = new char[strlen(groupName) + 1];
         strcpy_s(this->groupName, strlen(groupName) + 1, groupName);
-		return *this; // Повертаємо посилання на поточний об'єкт
-	}
+        return *this;
+    }
 
-    void print() {
-        std::cout << "Name: " << name << ", Group: " << groupName << ", Age: " << age << std::endl;
+    // РњРµС‚РѕРґ РІСЃС‚Р°РЅРѕРІР»РµРЅРЅСЏ РІС–РєСѓ
+    Student& SetAge(int age) {
+        this->age = age;
+        return *this;
+    }
+
+    // Р’РёРІРµРґРµРЅРЅСЏ С–РЅС„РѕСЂРјР°С†С–С—
+    void print() const {
+        std::cout << "Name: " << (name ? name : "Unknown")
+                  << ", Group: " << (groupName ? groupName : "Unknown")
+                  << ", Age: " << age << std::endl;
     }
 };
 
-int main()
-{
-	Student student;
+int main() {
+    Student student;
 
-    student.SetName("John Doe").SetGroupName("CS101").SetAge(20);
+    student.SetName("John Doe")
+           .SetGroupName("CS101")
+           .SetAge(20);
 
-	student.print();
+    student.print();
 
-
+    return 0;
 }
