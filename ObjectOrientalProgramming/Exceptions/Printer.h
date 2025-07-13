@@ -1,3 +1,8 @@
+/*
+	Приклад взятий з каналу Beauty Code: https://www.youtube.com/@CodeBeauty
+	Відео: https://youtu.be/kjEhqgmEiWY?si=KvK8dsFT_tHvE1cs
+*/
+
 #pragma once
 #include <string>
 #include <iostream>
