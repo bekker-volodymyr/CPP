@@ -12,6 +12,7 @@
     1. [This Pointer](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/ThisPointer) - приклад використання покажчика this.
     2. [Static Memebers](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/StaticMembers) - проєкт з використанням статичних членів класу (полів та методів).
     3. [Copy Constructor](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/CopyConstructor) - каталог, що містить приклад реалізації глибокого копіювання за допомогою конструктора копіювання.
+    4. [Exceptions](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/Exceptions) - проєкт з прикладами використання винятків.
 
 ## Підписи студентів
 
