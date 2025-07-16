@@ -15,18 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Exceptions.cpp">
+    <ClCompile Include="TypeCasting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Printer.cpp">
+    <ClCompile Include="ZooWorker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Animal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyException.h">
+    <ClInclude Include="ZooWorker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Printer.h">
+    <ClInclude Include="Animal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

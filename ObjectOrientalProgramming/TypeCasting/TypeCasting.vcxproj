@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ce7d7d2a-5180-419c-99ef-9c8b6cbb8427}</ProjectGuid>
-    <RootNamespace>Exceptions</RootNamespace>
+    <ProjectGuid>{1347a37f-fe9b-4bbc-a672-814ef2cefbd2}</ProjectGuid>
+    <RootNamespace>TypeCasting</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,12 +123,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Exceptions.cpp" />
-    <ClCompile Include="Printer.cpp" />
+    <ClCompile Include="Animal.cpp" />
+    <ClCompile Include="TypeCasting.cpp" />
+    <ClCompile Include="ZooWorker.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyException.h" />
-    <ClInclude Include="Printer.h" />
+    <ClInclude Include="Animal.h" />
+    <ClInclude Include="ZooWorker.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
