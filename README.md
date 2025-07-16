@@ -13,39 +13,29 @@
     2. [Static Memebers](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/StaticMembers) - проєкт з використанням статичних членів класу (полів та методів).
     3. [Copy Constructor](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/CopyConstructor) - каталог, що містить приклад реалізації глибокого копіювання за допомогою конструктора копіювання.
     4. [Exceptions](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/Exceptions) - проєкт з прикладами використання винятків.
+    5. [Type Casting](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/TypeCasting) - проєкт присвячений використанню різних типів явного перетворення (static_cast, dynamic_cast, const_cast, reinterpret_cast), а також демонструє роботу оператора typeid.
 
 ## Підписи студентів
-
-### П410
 <!--Ваші підписи тут!-->
+### П410
 hello world!
 <p> Ilya <p>
 <p>L E V</p>
-
 <p>Anastasiia</p>
-
 Артем Гончаренко -> програмист це страдання 24/7
-
 <p>sh4rk 🦈 | Biting bugs since 2019</p>
-
 manstruk - V.S.
 
 ### П42
 <p>kiossadost: Життя – це смертельна хвороба яка передається статевим шляхом.</p>
-
 <p>Нi World!</p>
-
 #### Кохан Олексій - <a href="https://github.com/8KOHAN">Мій GitHub</a>
 <p>𝖑𝖊𝖘4𝖑𝖊</p>
-  
   <p>Hello World!</p>
   <p>15.05.2025</p>
-  
   <div>
     <p>D u b r o v i n</p>
     <p>D a n i i l</p>    
   </div>
-  
   <p>Maria Kulibaba</p>
-  
   <p>Kostya</p>
