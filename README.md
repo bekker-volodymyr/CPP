@@ -14,6 +14,7 @@
     3. [Copy Constructor](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/CopyConstructor) - каталог, що містить приклад реалізації глибокого копіювання за допомогою конструктора копіювання.
     4. [Exceptions](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/Exceptions) - проєкт з прикладами використання винятків.
     5. [Type Casting](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/TypeCasting) - проєкт присвячений використанню різних типів явного перетворення (static_cast, dynamic_cast, const_cast, reinterpret_cast), а також демонструє роботу оператора typeid.
+    6. [Streams](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/Streams) - проєкт, що містить набір прикладів по роботі з потоками з використанням класів, в основному зосереджений на файлових потоках.
 
 ## Підписи студентів
 <!--Ваші підписи тут!-->
@@ -31,11 +32,11 @@ manstruk - V.S.
 <p>Нi World!</p>
 #### Кохан Олексій - <a href="https://github.com/8KOHAN">Мій GitHub</a>
 <p>𝖑𝖊𝖘4𝖑𝖊</p>
-  <p>Hello World!</p>
-  <p>15.05.2025</p>
-  <div>
-    <p>D u b r o v i n</p>
-    <p>D a n i i l</p>    
-  </div>
-  <p>Maria Kulibaba</p>
-  <p>Kostya</p>
+<p>Hello World!</p>
+<p>15.05.2025</p>
+<div>
+  <p>D u b r o v i n</p>
+  <p>D a n i i l</p>    
+</div>
+<p>Maria Kulibaba</p>
+<p>Kostya</p>
