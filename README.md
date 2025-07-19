@@ -15,6 +15,8 @@
     4. [Exceptions](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/Exceptions) - проєкт з прикладами використання винятків.
     5. [Type Casting](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/TypeCasting) - проєкт присвячений використанню різних типів явного перетворення (static_cast, dynamic_cast, const_cast, reinterpret_cast), а також демонструє роботу оператора typeid.
     6. [Streams](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/Streams) - проєкт, що містить набір прикладів по роботі з потоками з використанням класів, в основному зосереджений на файлових потоках.
+    7. [Smart Pointers](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/SmartPointers) - проєкт, який демонструє базову роботу з розумними покажчиками (unique_ptr, shred_ptr, weak_ptr).
+    8. [STL Examples](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/STLExamples) - проєкт з прикладамим використання класів з бібліотеки STL.
 
 ## Підписи студентів
 <!--Ваші підписи тут!-->
