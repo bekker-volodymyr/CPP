@@ -157,6 +157,19 @@ int main()
 		int count = count_if(nums.begin(), nums.end(), greaterThan5);
 		cout << "×èñåë > 5: " << count << endl;
 	}
+
+	{
+		// Ëÿìáäà-ôóíêö³ÿ ç ïàğàìåòğàìè
+		// [capture] - çì³íí³ ç çîâí³øíüî¿ îáëàñò³ âèäèìîñò³
+		// (parameters) - ïàğàìåòğè ëÿìáäà-ôóíêö³¿
+		// { body } - ò³ëî ëÿìáäà-ôóíêö³¿
+		int number = 10;
+		auto multiply = [number](int x) {
+			return number * x;
+		};
+
+		cout << "10 * 5 = " << multiply(5) << endl;
+	}
 }
 
 bool isEven(int n) {
