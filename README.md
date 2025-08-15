@@ -45,3 +45,4 @@ manstruk - V.S.
 <p>Maria Kulibaba</p>
 <p>Kostya</p>
 <p>Глеб Нестерчук</p>
+<p>Катерина Лемішко</p>
