@@ -15,14 +15,14 @@
 
 2. [Object-Oriented Programming](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming)  
    Каталог містить приклади з ООП:  
-   1. [This Pointer](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/ThisPointer) — приклад використання покажчика `this`.  
-   2. [Static Members](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/StaticMembers) — проєкт з використанням статичних членів класу (полів та методів).  
-   3. [Copy Constructor](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/CopyConstructor) — приклад реалізації глибокого копіювання за допомогою конструктора копіювання.  
-   4. [Exceptions](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/Exceptions) — приклади використання винятків.  
-   5. [Type Casting](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/TypeCasting) — використання різних типів явного перетворення (`static_cast`, `dynamic_cast`, `const_cast`, `reinterpret_cast`) та оператор `typeid`.  
-   6. [Streams](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/Streams) — приклади роботи з потоками, переважно файловими.  
-   7. [Smart Pointers](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/SmartPointers) — базова робота з розумними покажчиками (`unique_ptr`, `shared_ptr`, `weak_ptr`).  
-   8. [STL Examples](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/STLExamples) — приклади використання класів з бібліотеки STL.
+   - [This Pointer](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/ThisPointer) — приклад використання покажчика `this`.  
+   - [Static Members](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/StaticMembers) — проєкт з використанням статичних членів класу (полів та методів).  
+   - [Copy Constructor](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/CopyConstructor) — приклад реалізації глибокого копіювання за допомогою конструктора копіювання.  
+   - [Exceptions](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/Exceptions) — приклади використання винятків.  
+   - [Type Casting](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/TypeCasting) — використання різних типів явного перетворення (`static_cast`, `dynamic_cast`, `const_cast`, `reinterpret_cast`) та оператор `typeid`.  
+   - [Streams](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/Streams) — приклади роботи з потоками, переважно файловими.  
+   - [Smart Pointers](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/SmartPointers) — базова робота з розумними покажчиками (`unique_ptr`, `shared_ptr`, `weak_ptr`).  
+   - [STL Examples](https://github.com/bekker-volodymyr/CPP/tree/master/ObjectOrientalProgramming/STLExamples) — приклади використання класів з бібліотеки STL.
 
 ## Підписи студентів
 <!--Ваші підписи тут!-->
