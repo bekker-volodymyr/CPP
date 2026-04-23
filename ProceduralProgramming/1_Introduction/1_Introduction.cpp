@@ -21,9 +21,9 @@ int main() // main function - entry point to our code
     bool boolean = true; // Create and initialize variable 
 
     const int constant = 12;
-    // constant = 15; // ERROR: Can't change value of const
+    constant = 15; // ERROR: Can't change value of const
 
-    cout << "Forget semicolon\n";
+    cout << "Forget semicolon\n"
 
     std::cout << "Hello World!\n";
 
