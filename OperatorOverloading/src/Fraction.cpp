@@ -82,6 +82,11 @@ Fraction Fraction::operator++(int)
     return temp;
 }
 
+std::strong_ordering Fraction::operator<=>(const Fraction &other) const
+{
+    return (numerator * other.denominator) <=> (other.numerator * denominator);
+}
+
 // Перевантаження оператора <<
 std::ostream &operator<<(std::ostream &os, const Fraction &f)
 {

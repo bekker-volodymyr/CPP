@@ -1,4 +1,7 @@
+#pragma once
+
 #include <iostream>
+#include <compare>
 
 class Fraction
 {
@@ -11,12 +14,10 @@ public:
     Fraction(int num, int denom);
 
     static Fraction add(const Fraction &f1, const Fraction &f2);
-
     static Fraction printFraction(const Fraction &f);
 
     // Префіксна форма оператора ++
     Fraction &operator++();
-
     // Постфіксна форма оператора ++
     // (int параметр для відрізнення)
     Fraction operator++(int);
@@ -45,13 +46,7 @@ public:
         return (numerator * other.denominator == other.numerator * denominator);
     }
 
-    // Перевантаження оператора !
-    // Повертає true, якщо дроб правильний
-    // Повертає false, якщо дроб неправильний
-    bool operator!() const
-    {
-        return (numerator < denominator);
-    }
+    std::strong_ordering operator<=>(const Fraction &other) const;
 
     // Перевантаження операторів << та >>
     friend std::ostream &operator<<(std::ostream &os, const Fraction &f);
