@@ -1,12 +1,13 @@
 #pragma once
 
 template <typename T>
-class Box {
+class Box
+{
 private:
     T value;
 
 public:
-    Box() : value(T()) {} // Конструктор за замовчуванням
+    Box() : value(T()) {}
     Box(T val) : value(val) {}
     T getValue() const
     {
